@@ -1,0 +1,11 @@
+@media(min-width:1024px){
+    .price-table{
+        margin-top:13rem;
+    }
+
+    .wrapper-title-price{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+}

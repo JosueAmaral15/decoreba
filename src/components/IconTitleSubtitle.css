@@ -1,0 +1,19 @@
+section.icon-title-subtitle{
+    padding-block:1rem;
+    margin-block:1rem;
+}
+
+.icon-title-subtitle h2{
+    padding-block:1rem;
+    font-size:large;
+    font-weight:normal;
+}
+
+.icon-title-subtitle p{
+    color:gray;
+    font-size:medium;
+}
+
+@media(min-width:1024px){
+    
+}

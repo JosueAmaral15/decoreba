@@ -1,0 +1,48 @@
+h1.price-table{
+    font-size:6.25rem;
+    text-align: center;
+}
+
+h2.heading-choose-needs{
+    color:gray;
+    font-size:xx-large;
+    font-weight:normal;
+    text-align: center;
+    margin-block:5rem;
+}
+
+.plans-panel-div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.plans-panel{
+    width:fit-content;
+    background-color: #eee;
+    border-radius:0.75rem;
+    padding: 0.125rem;
+    box-shadow: 0 0 4px 8px #eee;
+    /* width:25rem; */
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+}
+
+.plans-panel .plans-buttons{
+    border-radius:0.75rem;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    padding: 1rem;
+    transition: background-color 1s ease;
+}
+
+.plans-panel .selected{
+    background-color:white;
+    transition: background-color 1s ease;
+}
+
+.common-questions{
+    font-size:xx-large;
+}

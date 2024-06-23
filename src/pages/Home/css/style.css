@@ -1,0 +1,118 @@
+
+main.main-home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    font-family: "Inter";
+    box-shadow: 0px 0px 8px 8px rgb(250,250,250);
+}
+
+.heading{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-block:2rem;
+}
+
+h1.title{
+    font-size:x-large;
+    color:#454545;
+    font-family: "Playwrite CO", cursive;
+    position:relative;
+    /*text-shadow: 4px 4px 4px gray;*/
+}
+
+.subtitle{
+    text-align: center;
+    width:70%;
+    padding-block:1rem;
+}
+
+.know-more{
+    padding-block:1rem;
+    margin-block:1rem;
+    text-align: center;
+}
+
+.before-study{
+    font-size:large;
+    font-weight:bold;
+}
+
+.your-study-tool{
+    margin-block:1rem;
+    color:gray;
+}
+
+.know-more-button{
+    margin-block: 1rem;
+}
+
+button.button-pattern-home{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 7%;
+    padding:1rem;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor:pointer;
+}
+
+button.button-pattern-home:hover{
+    background-color: #333;
+}
+
+.offer{
+    font-weight:bold;
+}
+
+.social-network-icons{
+    display:flex;
+    justify-content: center;
+    gap:1.5rem;
+    margin-block:2rem;
+}
+
+.social-network-icons img{
+    cursor:pointer;
+}
+
+.four-separate-texts-div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-social .header-branding-div{
+    text-align:center;
+    width:100%;
+}
+
+.header-social .header-branding{
+    font-family: inspiration;
+    font-size: 8rem;
+    font-weight:bold;
+    text-transform: capitalize;
+}
+
+/*h1.title2{
+    color:lightgray;
+    font-size:x-large;
+    font-family: "Playwrite CO", cursive;
+    position:absolute;
+}
+
+.self-marquee-title{
+    position:absolute;
+    width:100%;
+    left:0;
+    height:8rem;
+}
+
+.title-marquee{
+    position:relative;
+    width: 100%;
+    height:8rem;
+}*/

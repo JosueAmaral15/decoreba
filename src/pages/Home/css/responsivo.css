@@ -1,0 +1,75 @@
+@media(min-width:1024px){
+    
+
+    h1.title{
+        font-size:5rem;
+        /*color:#454545;*/
+    }
+
+    /*h1.title2{
+        font-size:5rem;
+    }*/
+
+    p.subtitle{
+        font-size:x-large;
+    }
+
+    main.main-home {
+        padding-top:16rem;
+        margin-block:2rem;
+    }
+
+    .heading{
+        gap:5rem;
+        margin-bottom:8rem;
+        padding-block: 1rem;
+    }
+
+    .offer{
+        font-size: xx-large;
+        align-self: flex-start;
+        margin-top:8rem;
+        margin-bottom: 2rem;
+    }
+
+    .icon-title-subtitle-div{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap:1rem;
+
+    }
+
+    .icon-title-subtitle-div section.icon-title-subtitle {
+        padding-right:16rem;
+    }
+
+    .know-more{
+        margin-top:8rem;
+    }
+
+    .know-more .before-study{
+        font-size:xx-large;
+    }
+
+    .know-more .your-study-tool{
+        font-size:large;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-top:8rem;
+    }
+
+    .four-separate-texts-div{
+        display:flex;
+        flex-direction:row;
+        gap:2rem;
+    }
+
+    button.button-pattern-home{
+        padding:2rem;
+    }
+}

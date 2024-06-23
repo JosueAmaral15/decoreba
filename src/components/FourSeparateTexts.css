@@ -1,0 +1,23 @@
+.four-separate-texts .title{
+    color:black;
+}
+
+.four-separate-texts .text{
+    color:gray;
+    cursor:pointer;
+}
+
+.four-separate-texts p{
+    margin:1rem;
+}
+
+section.four-separate-texts{
+    padding-block:1rem;
+    text-align:center;
+}
+
+@media(min-width:1024px){
+    section.four-separate-texts{
+        text-align:left;
+    }
+}
