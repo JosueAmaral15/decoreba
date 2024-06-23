@@ -1,0 +1,86 @@
+.header-login{
+    text-align: center;
+}
+
+.header-login .header-branding-login{
+    font-family: inspiration;
+    font-size: 4rem;
+    font-weight:bold;
+    text-transform: capitalize;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-block:4rem;
+    padding:3rem;
+    background-color: rgb(250,250,250);
+    border-radius: 2rem;
+    width:100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.use-subscribe-text{
+    font-size:medium;
+}
+
+.main-login .login-part{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    padding-block:2rem;
+    width:100%;
+}
+
+.main-login .login-part .email-login{
+    border-radius:0.25rem;
+    border: 1px solid lightgray;
+    width:100%;
+    height:3rem;
+    padding:1rem;
+}
+
+.main-login .login-part p{
+    font-size:medium;
+}
+
+.main-login .login-part .subscribe-button{
+    background-color: black;
+    color:white;
+    border-radius: 0.75rem;
+    padding:0.75rem;
+    width:100%;
+    box-shadow: 0 0 8px 4px gray;
+    cursor:pointer;
+}
+
+.main-login .login-part .subscribe-button:hover{
+    background-color: #111;
+}
+
+.google-button{
+    background-color: #EEE;
+    border-radius: 0.75rem;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.google-text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    font-weight:500;
+    font-size:small;
+}
+
+.google-logo{
+    position:absolute;
+    align-self: flex-start;
+}

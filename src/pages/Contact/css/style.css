@@ -1,0 +1,64 @@
+.main-contact{
+    margin-block:3rem;
+    font-family:"Inter" "Verdana";
+}
+
+.main-contact .title-user-data-button .contact-header{
+    text-align: center;
+    margin-block:3rem;
+}
+
+.main-contact .title-user-data-button .contact-us{
+    font-size:xx-large;
+    text-align: center;
+}
+
+.main-contact .title-user-data-button .enter-contact{
+    font-size:medium;
+    color:gray;
+    margin-block:3rem;
+}
+
+.main-contact .title-user-data-button .contact-img{
+    width:100%;
+    height:50rem;
+}
+
+.main-contact .contact-img2{
+    display:none;
+    width:100%;
+    height:50rem;
+}
+
+.main-contact .title-user-data-button .title-usertext{
+    margin-block:3rem;
+}
+
+.main-contact .title-user-data-button .data-title{
+    font-size: large;
+}
+
+.main-contact .title-user-data-button .user-data{
+    width:100%;
+    height:4rem;
+    margin-block:1rem;
+}
+
+.main-contact .title-user-data-button .contact-form{
+    margin-top:3rem;
+}
+
+.main-contact .title-user-data-button .user-message{
+    width:100%;
+}
+
+.main-contact .title-user-data-button .submit-button{
+    color:white;
+    font-weight:bold;
+    text-align: center;
+    background-color: black;
+    padding:1rem;
+    width:100%;
+    border-radius: 1rem;
+    margin-block: 3rem;
+}

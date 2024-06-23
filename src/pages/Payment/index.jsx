@@ -3,12 +3,27 @@ import "./css/responsive.css";
 import TopHeader from "../../components/TopHeaderTitleLinks.jsx";
 import TitlePriceButton from "../../components/TitlePriceButton.jsx";
 import QuestionAnswer from "../../components/QuestionAnswer.jsx";
-import FourSeparateTexts from "../../components/FourSeparateTexts.jsx";
+import BottomFooter from "../../components/BottomFooter.jsx";
 import {useState} from 'react';
 
 const features = [
     {
         title: "Plano borracha branca",
+        price: "grátis",
+        secondPrice: "grátis",
+        time: "",
+        secondTime: "",
+        contentFeatures: [
+            "dois exemplos de estudos",
+            "acesso a estatísticas simples",
+            "organização e planejamento simples",
+            "limite de três cadernos",
+            "calendário padrão",
+        ],
+        messageButton: "selecionar"
+    },
+    {
+        title: "Plano apontador bronzeado",
         price: "R$2,99",
         secondPrice: "R$33,99",
         time: "por mês",
@@ -77,22 +92,6 @@ const questionAnswer = [
     },
 ];
 
-const fourSeparateTextsData = [
-    {
-        title: "Plataforma",
-        first: "Acesso à plataforma",
-        second: "Tutorial",
-        third: "Exemplos"
-    },
-    {
-        title: "Sobre nós",
-        first: "Quem somos",
-        second: "Sobre",
-        third: "Contato"
-    }
-    
-];
-
 export default function Payment(){
     const [isMonthlyPlan, setIsMonthlyPlan] = useState(true);
 
@@ -130,25 +129,7 @@ export default function Payment(){
                     {questionAnswer.map((item, index) => {return (<QuestionAnswer question={item.question} answer={item.answer} key={`QA${index}`} />)})}
                 </section>
             </main>
-            <footer>
-                <div className="four-separate-texts-div">
-                    {fourSeparateTextsData.map(function (item, index){
-                        return (
-                            <FourSeparateTexts
-                                title={item.title}
-                                first={item.first}
-                                second={item.second}
-                                third={item.third}
-                                key={`FST${index}`}
-                            />
-                        )
-                    })}
-                </div>
-                <div className="header-social">
-                    <div className="header-branding-div"><span className="header-branding">Decoreba</span></div>
-                    <div className="social-network-icons"><img src="/facebookIcon.svg" /><img src="/linkedInIcon.svg" /><img src="/youTubeIcon.svg" /><img src="/instagramIcon.svg" /></div>
-                </div>
-            </footer>
+            <BottomFooter />
         </>
     )
 }

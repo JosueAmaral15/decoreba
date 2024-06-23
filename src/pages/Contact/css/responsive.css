@@ -1,0 +1,33 @@
+@media(min-width:1024px){
+    .main-contact .title-user-data-button .contact-img {
+        display: none;
+    }
+
+    .main-contact .contact-img2 {
+        display: block;
+        padding-inline:5rem;
+    }
+
+    .main-contact{
+        display: grid;
+        /* grid-template-rows: repeat(2,1fr); */
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .main-contact .title-user-data-button .contact-header .contact-us{
+        font-size:6rem;
+    }
+
+    .main-contact .title-user-data-button .contact-header .enter-contact{
+        font-size: x-large;
+    }
+
+    .main-contact .title-user-data-button .contact-header{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin:0;
+    }
+
+}
