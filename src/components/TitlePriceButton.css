@@ -1,8 +1,8 @@
 
 
 .title-price-button{
-    background-color: rgb(250,250,250);
-    box-shadow: 0 0 4px 8px rgb(250,250,250);
+    background-color: #ddd;
+    box-shadow: 0 0 4px 8px #ddd;
     padding-block:5rem;
     border-radius:.25rem;
     margin-block:7.5rem;
@@ -59,4 +59,11 @@
 
 .wrapper-title-button{
     margin-inline:4rem;
+}
+
+@media(min-width:1024px){
+    .title-price-button{
+        background-color: #eee;
+        box-shadow: 0 0 4px 8px #eee;
+    }
 }

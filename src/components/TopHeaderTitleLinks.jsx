@@ -1,5 +1,6 @@
 import "./TopHeaderTitleLinks.css";
 import {useState} from "react";
+import { Link } from 'react-router-dom';
 
 export default function TopHeaderTitleLinks(){
     const [isVisible, setIsVisible] = useState(false);
@@ -12,9 +13,9 @@ export default function TopHeaderTitleLinks(){
                     <line x1="10" y1="35" x2="44" y2="35" style={{stroke:"#000",strokeLinecap:"round",strokeWidth:4}} />
                 </svg>
                 <nav className="links-button">
-                    <a href="#">home</a>
-                    <a href="#">assinar</a>
-                    <a href="#">sobre</a>
+                    <Link to="/">home</Link>
+                    <Link to="/subscriptions">assinar</Link>
+                    <Link to="/about">sobre</Link>
                     <button href="#">sign up</button>
                 </nav>
             </div>
@@ -26,9 +27,9 @@ export default function TopHeaderTitleLinks(){
                     <img onClick={()=>{setIsVisible(false)}} className="close-img" src="close.svg" alt="close button" />
                 </div>
                 <div className="links-button">
-                    <a href="#">home</a>
-                    <a href="#">assinar</a>
-                    <a href="#">sobre</a>
+                    <Link to="/">home</Link>
+                    <Link to="/subscriptions">assinar</Link>
+                    <Link to="/about">sobre</Link>
                 </div>
             </div>
         </header>

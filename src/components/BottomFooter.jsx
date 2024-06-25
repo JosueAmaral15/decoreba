@@ -5,14 +5,20 @@ const fourSeparateTextsData = [
     {
         title: "Plataforma",
         first: "Acesso à plataforma",
+        linkFirst: "/",
         second: "Tutorial",
-        third: "Exemplos"
+        linkSecond:"/",
+        third: "Exemplos",
+        linkThird: "/"
     },
     {
         title: "Sobre nós",
         first: "Quem somos",
+        linkFirst: "/who_are_we",
         second: "Sobre",
-        third: "Contato"
+        linkSecond: "/about",
+        third: "Contato",
+        linkThird: "/contact"
     }
     
 ];
@@ -26,8 +32,11 @@ export default function BottomFooter(){
                         <FourSeparateTexts
                             title={item.title}
                             first={item.first}
+                            linkFirst={item.linkFirst}
                             second={item.second}
+                            linkSecond={item.linkSecond}
                             third={item.third}
+                            linkThird={item.linkThird}
                             key={`FST${index}`}
                         />
                     )
