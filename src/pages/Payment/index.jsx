@@ -5,6 +5,8 @@ import TitlePriceButton from "../../components/TitlePriceButton.jsx";
 import QuestionAnswer from "../../components/QuestionAnswer.jsx";
 import BottomFooter from "../../components/BottomFooter.jsx";
 import {useState} from 'react';
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const features = [
     {
@@ -94,6 +96,22 @@ const questionAnswer = [
 
 export default function Payment(){
     const [isMonthlyPlan, setIsMonthlyPlan] = useState(true);
+    useEffect(() => {
+        const sr = ScrollReveal({
+            distance:'20px',
+            duration: 700,
+            origin: 'top',
+            delay:100,
+            reset:false,
+        })
+
+        sr.reveal(`
+            .main-payment .price-table,
+            .main-payment .heading-choose-needs,
+            .main-payment .plans-panel-div .plans-panel,
+            .main-payment .common-questions-section .common-questions
+        `)
+    },[])
 
     return (
         <>

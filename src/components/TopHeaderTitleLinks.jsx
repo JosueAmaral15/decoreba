@@ -1,9 +1,31 @@
 import "./TopHeaderTitleLinks.css";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
+import ScrollReveal from "scrollreveal";
 
 export default function TopHeaderTitleLinks(){
     const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(()=>{
+        const sr = ScrollReveal({
+            origin:'top',
+            duration:700,
+            delay:100,
+            distance:'20px',
+            reset:false,
+        });
+
+        sr.reveal(`
+            .header-buttons .three-bars,
+            .header-buttons .links-button,
+            .header-branding-div .header-branding,
+            .modal-links .close-wrapper,
+            .modal-links .links-button
+        `, {
+            interval:200
+        });
+    });
+
     return (
         <header className="top-main-header">
             <div className="header-buttons">

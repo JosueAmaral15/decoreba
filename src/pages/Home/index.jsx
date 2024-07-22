@@ -4,6 +4,7 @@ import ContentBlock from "../../components/ContentBlock.jsx";
 import IconTitleSubtitle from "../../components/IconTitleSubtitle.jsx";
 import TopHeaderTitleLinks from "../../components/TopHeaderTitleLinks.jsx";
 import BottomFooter from "../../components/BottomFooter.jsx";
+import {useEffect} from 'react';
 
 const iconTitleSubtitleData = [
     {
@@ -38,7 +39,7 @@ const contentBlockData = [
         alt:"imagem de uma professora em mangá" ,
         title:"Experimente nossa plataforma" ,
         text:"Uma vez acessada, a plataforma concede aos nossos usuários a possibilidade de ver na prática como funciona o processo de aprendizado. Experimente sem compromisso!" ,
-        href:"https://www.google.com.br",
+        href:"/",
         textButton:"Acessar plataforma"
     },
     {
@@ -46,12 +47,33 @@ const contentBlockData = [
         alt:"imagem de um professor dando aula",
         title:"Tenha referências de estudos e memorização",
         text:"Tenha acesso a uma coletânea de exemplos de estudos, templates e formas diferentes de estudar para melhorar seus rendimentos e aumentar as notas das avaliações." ,
-        href:"https://www.google.com.br",
+        href:"/",
         textButton:"Acessar exemplos"
     }
 ]
 
-export default function Home (){    
+export default function Home (){
+
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin:'top',
+            distance:'20px',
+            duration: 1000,
+            delay:100,
+            reset:false,
+        });
+
+        sr.reveal(`
+            main.main-home .heading .title,
+            main.main-home .heading .subtitle,
+            main.main-home .heading button,
+            .offer,
+            .know-more .before-study,
+            .know-more .your-study-tool,
+            .know-more button
+        `)
+    })
+
     return (
         <>
             <TopHeaderTitleLinks />

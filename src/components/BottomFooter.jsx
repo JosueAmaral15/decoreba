@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import "./BottomFooter.css";
 import FourSeparateTexts from "./FourSeparateTexts.jsx";
+import ScrollReveal from "scrollreveal";
 
 const fourSeparateTextsData = [
     {
@@ -24,6 +26,21 @@ const fourSeparateTextsData = [
 ];
 
 export default function BottomFooter(){
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin:"top",
+            distance:"20px",
+            duration:700,
+            delay:100,
+            reset:false,
+        })
+        sr.reveal(`
+            .four-separate-texts-div,
+            .header-social .header-branding-div
+            .header-social .social-network-icons
+        `)
+    })
+
     return (
         <footer>
             <div className="four-separate-texts-div">

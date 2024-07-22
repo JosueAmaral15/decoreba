@@ -2,6 +2,8 @@ import "./css/style.css";
 import "./css/responsive.css";
 import TopHeader from "../../components/TopHeaderTitleLinks.jsx";
 import BottomFooter from "../../components/BottomFooter.jsx";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const userTextData = [
     {
@@ -22,6 +24,29 @@ const userTextData = [
 ]
 
 export default function Contatos(){
+
+    useEffect(()=>{
+        const sr = ScrollReveal({
+            origin:'top',
+            duration:700,
+            delay:100,
+            distance:'20px',
+            reset:false,
+        })
+
+        sr.reveal(`
+            main.main-contact .title-user-data-button .contact-header .contact-us,
+            main.main-contact .title-user-data-button .contact-header .enter-contact,
+            main.main-contact .title-user-data-button .contact-header .contact-img,
+            main.main-contact .title-user-data-button .contact-form .title-usertext,
+            main.main-contact .title-user-data-button .contact-form .data-title,
+            main.main-contact .title-user-data-button .contact-form user-data,
+            main.main-contact .title-user-data-button .contact-form .user-message,
+            main.main-contact .title-user-data-button .contact-form .submit-button,
+            main.main-contact .contact-img2
+        `)
+    },[])
+
     return (
         <>
             <TopHeader />
